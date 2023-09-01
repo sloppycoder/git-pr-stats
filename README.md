@@ -1,13 +1,13 @@
 
 # Welcome to your Python project
 
-This project is set up Python project with dev tooling pre-configured
+## Run code gen
 
-* black
-* flake8
-* isort
-* mypy
-* VS Code support
+```shell
+
+ariadne-codegen --config codegen-github.toml
+
+```
 
 ## Setup
 

@@ -37,3 +37,4 @@ repos:
     entry: flake8
     language: system
     types: [python]
+    exclude: ^(github|gitlab)_client/

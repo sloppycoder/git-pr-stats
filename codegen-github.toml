@@ -1,0 +1,4 @@
+[tool.ariadne-codegen]
+schema_path = "schema/github_api.schema"
+queries_path = "gql/github"
+target_package_name = "github_client"
