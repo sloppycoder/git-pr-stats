@@ -1,0 +1,35 @@
+query pr_stats($repo_path: ID!) {
+  project(fullPath: $repo_path) {
+    mergeRequests(first: 10) {
+      edges {
+        node {
+          id
+          title
+          createdAt
+          mergedAt
+          author {
+            username
+          }
+          notes {
+              edges {
+                  node {
+                      authorIsContributor
+                      createdAt
+                      discussion {
+                          id
+
+                      }
+                  }
+              }
+          }
+          # userNotesCount : this does not work for some reason, comment out for now
+          diffStats {
+            additions
+            deletions
+            path
+          }
+        }
+      }
+    }
+  }
+}

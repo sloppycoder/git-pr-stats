@@ -1,0 +1,4 @@
+[tool.ariadne-codegen]
+schema_path = "schema/gitlab_api.schema"
+queries_path = "gql/gitlab"
+target_package_name = "gitlab_client"

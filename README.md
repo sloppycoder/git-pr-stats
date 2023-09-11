@@ -6,6 +6,7 @@
 ```shell
 
 ariadne-codegen --config codegen-github.toml
+ariadne-codegen --config codegen-gitlab.toml
 
 ```
 
